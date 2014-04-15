@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--   Written by Nader K -->
+
+<html>
+
+<meta charset="UTF-8" />
+<title>Pizza Factory | Welcome to Pizza Factory</title>
+
+
+<link href="pizzafactory.css" rel="stylesheet" />
+<!-- bxSlider CSS file -->
+<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<header>
+    <img src="pizzafactory.jpg" alt="Pizza Factory" />
+    <nav>
+        <ul>
+            <li><a href="pfhome.html">Home</a></li>
+            <li><a href="pforder.html">Order</a></li>
+            <li><a href="pfcoupons.html">Coupons</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <br>
+        <h1>Welcome to Pizza Factory</h1><br><br>
+        <p>The best pizza where you can order online!</p>
+    </article>
+
+</header>
+
+<section>
+    <div class="sliderwrap">
+    <ul class="bxslider">
+        <li><img src="images/pizza1.jpg" /></li>
+        <li><img src="images/pizza2.jpg" /></li>
+        <li><img src="images/pizza4.jpg" /></li>
+    </ul>
+    </div>
+
+</section>
+<section>
+    <p>(Click on "prev" or "next" above to browse our gallery)</p><br />
+</section>
+<section>
+    <h2>Welcome to PizzaFactory!</h2>
+    <br />
+
+</section>
+<section>
+
+    <div class="intro" id="intro">
+        <p>
+            PizzaFactory is a new pizza company, that is focused on quality and excellent customer experience.<br />
+
+            Customers can visit our pizzeria or order online.<br />
+
+            To order online, please click on the order page and fill in the form, and we will either deliver the pizza <br />
+
+            to your door, or you can pick it up from our facility. It's your choice!<br />
+
+            Payment is due upon delivery or pickup. <br />
+
+            Be sure to check our COUPONS page!<br /><br /><br />
+
+
+
+        </p>
+
+
+
+    </div>
+
+
+</section>
+
+
+<footer>
+    <address>
+        Pizza Factory &bull;
+        123 Pizza Drive &bull;
+        Pizza City, MI  12345 &bull;
+        (888) 555 - 1212
+    </address>
+</footer>
+
+<!-- jQuery library (served from Google) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            speed: 100
+        });
+    });
+</script>
+</body>
+
+</html>

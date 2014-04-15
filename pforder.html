@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--   Written by Nader K -->
+<html>
+
+<meta charset="UTF-8" />
+<title>Pizza Factory | Order Online</title>
+
+<link href="pizzafactory.css" rel="stylesheet" />
+<link href="forms.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<header>
+    <img src="pizzafactory.jpg" alt="Pizza Factory" />
+    <nav>
+        <ul>
+            <li><a href="pfhome.html">Home</a></li>
+            <li><a href="pforder.html">Order</a></li>
+            <li><a href="pfcoupons.html">Coupons</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <br>
+        <h1>Build and Order Your Pizza</h1><br><br>
+        <p>Please fill in the pizza order form and build your own pizza!
+
+        </p>
+    </article>
+</header>
+
+<section>
+    <p>Fields marked by an asterisk (*) are required</p>
+
+
+</section>
+
+<section>
+
+
+            <fieldset id="custInfo">
+                <legend>Customer Information</legend>
+                <form method="POST" action="orderprocess.php">
+                    <label>Name *
+                    <input type= "text" name="name" id="name" placeholder="first and last name" required="required" /></label>
+                    <label>Address *
+                    <input type="text" name="street" id="street" required="required" /></label>
+                    <label>City *
+                    <input type= "text" name="city" id="city" required="required" /></label>
+                    <label>State *
+                    <input type= "text" name="state" id="state" size="2"  required="required"/></label>
+                    <label>Zip code *
+                    <input type= "text" name="zip" id="zip" placeholder="nnnnn (-nnnn)" required="required" /></label>
+                    <label>Phone number *
+                    <input name="phone" id="phone"  type="tel" placeholder="(nnn) nnn-nnnn" required="required"/></label>
+                    <label>E-mail
+                    <input name="email" id="email" type="email" required="required" /></label>
+            </fieldset>
+
+
+            <fieldset>
+                <img src="pizza.jpg" alt="Pizza" />
+            </fieldset>
+
+
+            <fieldset id="prices">
+                <legend>Prices</legend>
+                <p>Small Pizza 10" is $10.00</p>
+                <p>Medium Pizza 12" is $13.00</p>
+                <p>Large Pizza 14" is $15.00</p>
+
+            </fieldset>
+
+    </section>
+
+     <section>
+         <fieldset id="BuildYourPizza">
+                <legend>Build Your Pizza</legend>
+
+                <label>Choose Pizza Size:</label>
+             <fieldset name="optionGroup">
+                    <input type="radio" name="size" id="size1" value="small">Small(10")<br>
+                    <input type="radio" name="size" id="size2" value="medium">Medium(12")<br>
+                    <input type="radio" name="size" id="size3" value="large">Large(14")
+             </fieldset>
+                <label>Choose Crust:</label>
+              <fieldset name="optionGroup">
+                    <input type="radio" name="crust" id="crust1" value="thin">Thin<br>
+                    <input type="radio" name="crust" id="crust2" value="deep">Deep<br>
+                    <input type="radio" name="crust" id="crust3" value="hand">Tossed<br>
+              </fieldset>
+
+
+                    <label>Choose up to 3 toppings.($1.25 extra for each additional topping):</label>
+              <fieldset name ="checkGroup">
+                    <input type="checkbox" name="topping[]" value="pepperoni">Pepperoni<br>
+                    <input type="checkbox" name="topping[]" value="mushrooms">Mushrooms<br>
+                    <input type="checkbox" name="topping[]" value="olives">Olives<br>
+                    <input type="checkbox" name="topping[]" value="sausage">Sausage<br>
+                    <input type="checkbox" name="topping[]" value="onions">Onions<br>
+                    <input type="checkbox" name="topping[]" value="jalapenos">Jalapenos<br>
+              </fieldset>
+
+                <label>Quantity:<input type="text" name="quantity" id="quantity" value="1" size="5" ></label><br><br>
+                <fieldset>
+                <label for="ordertype">Order type: (Deliver Fee is $3.00)</label>
+                <select name="ordertype" id="ordertype">
+
+                    <option value="delivery">Delivery</option>
+                    <option value="pickup">Pickup</option>
+                   </select>
+                </fieldset>
+
+                <label>Coupon? (If present check box)<input type="checkbox" name="coupon" id="coupon" value="coupon"</label>
+             <fieldset>
+                <label for="instructions">Special Instructions:</label>
+                <textarea name="instructions" id="instructions" rows="3" cols="30" wrap="hard"></textarea><br>
+             </fieldset>
+                <br>
+
+
+            <fieldset name="buttons" id="buttons">
+                <input type="submit" name="checkout" id="submitButton" value="Checkout">
+                <input type="reset" name="reset" id="resetButton" value="Reset">
+
+            </fieldset>
+             </form>
+
+          </fieldset>
+
+
+
+
+
+
+<footer>
+    <address>
+        Pizza Factory &bull;
+        123 Pizza Drive &bull;
+        Pizza City, MI  12345 &bull;
+        (888) 555 - 1212
+    </address>
+</footer>
+
+</body>
+
+</html>

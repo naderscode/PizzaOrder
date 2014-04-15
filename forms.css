@@ -1,0 +1,134 @@
+
+/*Fieldset styles*/
+
+fieldset {
+    background-color: rgb(255, 235, 115);
+    border: 1px solid rgb(233, 69, 0);
+    float: left;
+    margin: 10px 0px 10px 2.5%;
+    width: 46%;
+)
+}
+/*legend styles*/
+legend {
+    background-color: rgb(233, 69, 0);
+    color: white;
+    padding: 3px 0px;
+    text-indent: 5px;
+    width: 100%;
+}
+
+/* label styles */
+label {
+    clear: left;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 4% 7px 5px;
+    width: 80%;
+}
+/* Input control styles */
+ input {
+    display: block;
+    float: right;
+    font-size: 0.9em;
+    margin:5px 5px;
+    width: 65%;
+}
+
+input #state {
+    width: 50px;
+}
+ #prices p {
+        color: black;}
+}
+
+/* Option button styles */
+fieldset.optionGroup {
+    border-width: 10px;
+    width: 45em;
+}
+fieldset.optionGroup label {
+    display: inline;
+    float: right;
+    margin: 00px 10px 0px 0px;
+    width: 25px;
+}
+fieldset.optionGroup input {
+    display: inline;
+    float: left;
+    margin: 0px 10px 0px 0px;
+    width:10px;
+}
+/* Selection list styles */
+select {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+}
+
+fieldset.checkboxGroup {
+    border-width: 0px;
+    width: 40px;
+}
+fieldset.checkboxGroup label {
+    display: inline;
+    float: left;
+    margin: 00px 10px 0px 0px;
+    width: 10px;
+}
+fieldset.checkboxGroup input {
+    display: inline;
+    float:right;
+    margin: 0px 10px 0px 0px;
+    width: 10px;
+
+
+#quantity {
+    width: 10px;
+
+
+}
+
+/* Text area styles */
+textarea {
+    display: block;
+    font-size: 0.9em;
+    float: left;
+    height: 5em;
+    margin: 10px 0px;
+    width: 40em;
+}
+fieldset.buttons {
+    border-width: 0px;
+    width: 40px;
+
+}
+#submitButton, #resetButton {
+    box-shadow: 2px 2px 0 navy;
+    background-color: orange;
+
+}
+/* Validation styles */
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(220, 255, 220);
+}
+
+input:focus:valid {
+    background: rgb(220, 255, 220) url(go.png) bottom right
+    no-repeat;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+input:focus:invalid {
+    background: rgb(255, 232, 233) url(stop.png) bottom right
+    no-repeat;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}

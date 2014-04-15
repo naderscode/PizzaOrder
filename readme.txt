@@ -1,0 +1,4 @@
+PizzaOrder is a quick school project, It is a a web-based application, which includes a dynamic web page that collects, processes, and responds to user data. It is built as a sample pizza online order store. Users can choose pizza size, crust, toppings, and delivery options. 
+I wrote a PHP file – orderprocess.php - to process the data and respond to the user after submitting the form. Note that I used “$_POST['data']” to read the data from the submitted HTML form. Data refers to the variables that I set in the form, including name, size, crust, quantity, etc. The application collects users' data and saves it to a comma separated text  file, and sends an email with each order as well.
+The HTML files/ forms are written using HTML5 with some data validation. 
+I used jQuery for a photo slider on home page.
