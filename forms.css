@@ -7,7 +7,7 @@ fieldset {
     float: left;
     margin: 10px 0px 10px 2.5%;
     width: 46%;
-)
+
 }
 /*legend styles*/
 legend {
@@ -40,7 +40,7 @@ input #state {
     width: 50px;
 }
  #prices p {
-        color: black;}
+     color: black;}
 }
 
 /* Option button styles */
@@ -86,8 +86,8 @@ fieldset.checkboxGroup input {
 
 
 #quantity {
+    
     width: 10px;
-
 
 }
 
@@ -100,6 +100,7 @@ textarea {
     margin: 10px 0px;
     width: 40em;
 }
+
 fieldset.buttons {
     border-width: 0px;
     width: 40px;
@@ -110,6 +111,7 @@ fieldset.buttons {
     background-color: orange;
 
 }
+
 /* Validation styles */
 input:focus, select:focus, textarea:focus {
     background-color: rgb(220, 255, 220);
