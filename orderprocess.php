@@ -45,8 +45,8 @@ echo 'Email: '. $email .'<br />';
 echo "<h4>Here Are Your Order Details: </h4>";
 
 
-
 echo 'Size: ' . $size . '<br />';
+
 if($size=='small')
 {
     $baseprice = 10;
@@ -67,10 +67,11 @@ echo 'Crust: ' . $crust . '<br>';
 echo "Toppings: ";
 $toppings = $_POST['topping'];
 foreach($toppings as $item) echo  "$item" . ", ";
-echo "<br />";
 
-$counttop =count($toppings);
-echo "Number of toppings: " . $counttop . '<br />';
+    echo "<br />";
+
+    $counttop =count($toppings);
+    echo "Number of toppings: " . $counttop . '<br />';
 
 $extratopprice = 0;
 if($counttop> 3)
@@ -96,7 +97,7 @@ $delivery=0;
 if($ordertype == 'delivery')
 {
 
-$delivery = 3;
+    $delivery = 3;
 }
 else $delivery = 0;
 
